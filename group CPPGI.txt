@@ -1,0 +1,50 @@
+group: CPPGI
+
+TipoSecundario = {
+    idTipoSecundario:number,tipoSecundario:string,tipo:string
+}
+
+Area = {
+    codigoArea:number,nomeArea:string
+}
+
+GrupoPesquisa = {
+    idGrupoPesquisa:number,nome:string,descricao:string,linkSite:string,codigoArea:number
+}
+
+Producao = {
+    idProducao:number,titulo:string,descricao:string,anoProducao:number,dataInicio:date,dataTermino:date,codigoArea:number,idTipoSecundario:number
+}
+
+Agencia = {
+    idAgencia:number,nomeAgencia:string
+}
+
+Pesquisador = {
+    matricula:string,nome:string,tipo:string,email:string
+}
+
+Curso = {
+    codigoCurso:string,nome:string,nivelEnsino:string
+}
+
+Professor = {
+    matricula:string,titulo:string
+}
+
+Aluno = {
+    dataIngresso:date,matricula:string,dataEgresso:date
+}
+
+Desenvolve = {
+    matricula:string,idProducao:number,codigoCurso:string
+}
+
+Edital = {
+    idEdital:number,numero:string,tipo:string,dataInicio:date,dataTermino:date,idAgencia:number,matricula:string,idProducao:number,codigoCurso:string
+}
+
+Participa = {
+    dataIngresso:date,matricula:string,idGrupoPesquisa:number,dataEgresso:date,tipoParticipacao:string
+}
+
