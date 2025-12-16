@@ -5,7 +5,7 @@ USE CPPGI;
 CREATE TABLE TipoSecundario (
     id TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     tipo_secundario VARCHAR(128),
-    tipo ENUM("orientação", "produção técnica", "podução bibliográfica") NOT NULL
+    tipo ENUM("orientação", "produção técnica", "produção bibliográfica") NOT NULL
 );
 
 CREATE TABLE GrupoPesquisa (
